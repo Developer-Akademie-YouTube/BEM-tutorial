@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigUp</title>
+    <link rel="stylesheet" href="./assets.css">
+</head>
+
+<body>
+
+
+    <form class="form form--dark form--small">
+        <h2 class="form__title">Registrieren</h2>
+
+        <p class="form__text">Dein Profil wartet auf dich!</p>
+
+        <label class="form__label" for="signup-name">Name</label>
+        <input class="form__input" type="text" id="signup-name" name="name" required>
+
+        <label class="form__label" for="signup-email">E-Mail</label>
+        <input class="form__input" type="email" id="signup-email" name="email" required>
+
+        <label class="form__label" for="signup-password">Passwort</label>
+        <input class="form__input" type="password" id="signup-password" name="password" required>
+
+        <label class="form__label" for="signup-password-confirm">Passwort bestätigen</label>
+        <input class="form__input" type="password" id="signup-password-confirm" name="passwordConfirm" required>
+
+        <div class="form__actions">
+            <button class="button button--primary" type="submit">Registrieren</button>
+            <button class="button button--icon button--secondary" type="button">
+                <img src="./assets/login.png" alt="" class="button__icon">
+                Zurück zum Login
+            </button>
+        </div>
+    </form>
+</body>
+
+</html>

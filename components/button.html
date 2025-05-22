@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM-button</title>
+
+    <style>
+        /* ---Standards--- */
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(24, 32, 46, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 1rem;
+        }
+
+        /* ---Button--- */
+
+        /* Block */
+
+        /* Modifier */
+        /* colors:
+            rgba(255, 204, 0, 1)
+            rgba(33, 48, 73, 1)
+        */
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <button class="button button--primary">Primary Button</button>
+    <button class="button button--secondary">Secondary Button</button>
+    <button class="button button--disabled" disabled>Disabled Button</button>
+
+    <button class="button button--primary button--icon">
+        <span class="button__icon">🔍</span>
+        Search
+    </button>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM-header</title>
+    <style>
+        /* ---Standards--- */
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgba(24, 32, 46, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            height: 100vh;
+        }
+
+
+        /* Block */
+
+        .header {
+            width: 100%;
+            background-color: rgba(24, 32, 46, 1);
+            box-sizing: border-box;
+            padding: 20px;
+            border-bottom: 2px solid rgba(47, 72, 113, 1);
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 5px 10px 50px rgb(0, 0, 0, 0.5);
+        }
+
+
+        /* Element */
+        
+        .header__title {
+            font-size: 24px;
+            color: rgba(255, 204, 0, 1);
+        }
+
+        .header__nav-list {
+            list-style: none;
+            display: flex;
+            gap: 16px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header__nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header__nav-link:hover,
+        .header__nav-link:focus {
+            text-decoration: underline;
+            color: rgba(255, 204, 0, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <h1 class="header__title">Welcome to BEM</h1>
+
+        <nav class="header__nav" aria-label="Main navigation">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">About</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+
+</html>
