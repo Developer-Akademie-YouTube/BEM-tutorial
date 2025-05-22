@@ -27,17 +27,42 @@
 
         /* Block */
 
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
 
         /* Element */
-        /* colors:
-            rgba(255, 204, 0, 1)
-            rgba(47, 72, 113, 1)
-            rgba(33, 48, 73, 1)
-            rgba(28, 39, 57, 1)
-        */
 
+        .form__title{
+            color: rgba(255, 204, 0, 1);
+        }
+
+        .form__label{
+            font-weight: bold;
+        }
+
+        .form__input{
+            border: 1px solid rgba(47, 72, 113, 1);
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.2)
+        }
 
         /* Modifier */
+
+        .form--dark{
+            background-color: rgba(28, 39, 57, 1);
+            color: white;
+            border: 1px solid rgba(33, 48, 73, 1);
+        }
+        
+        .form--small{
+            width: 250px;
+        }
 
 
     </style>

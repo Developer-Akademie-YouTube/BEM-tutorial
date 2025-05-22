@@ -28,11 +28,36 @@
 
         /* Block */
 
+        .button{
+            padding: 8px 16px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
         /* Modifier */
-        /* colors:
-            rgba(255, 204, 0, 1)
-            rgba(33, 48, 73, 1)
-        */
+
+        .button--primary{
+            background-color: rgba(255, 204, 0, 1);
+            color: rgba(33, 48, 73, 1);
+        }
+
+        .button--secondary {
+            background-color: rgba(255, 231, 135, 1);
+            color: rgba(33, 48, 73, 1);
+        }
+
+        .button--disabled {
+            background-color: #ccc;
+            color: #666;
+            cursor: not-allowed;
+        }
+
+        .button--icon {
+            display: flex;
+            align-items: center;
+        }
 
 
         
